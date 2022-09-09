@@ -2,35 +2,46 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <script src="/main.js" defer></script>
-    <title>Background Color Flipper</title>
+    <title>RECIPE APP</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
 </head>
 <body>
-    <nav>
-        <div class="nav-div">
-            <h4>Color Flipper</h4>
-            <ul class="nav-list">
-                <li>
-                    <a href="index.html">Home</a>
-                </li>
-                <li>
-                    <a href="index.html">Projects</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
 
-    <main>
-
-        <div class="container">
-            <h2>
-                Background Color : <span class="color">#f1f5f8</span>
-            </h2>
-            <button class="btn btn-hero" id="btn"> Click me</button>
+<div class="mobile-container">
+    <header>
+        <input type="text">
+        <button id="search"><i class="fas fa-search"></i></button>
+    </header>
+    <div class="fav-container">
+        <h3>Favorite Meals</h3>
+        <ul class="fav-meals">
+            <li><img src="images/bakewelltart.jpg" alt="Bakewell tart"><span>Bakewell tart</span></li>
+            <li><img src="images/beefdumplingstew.jpg" alt="Beef dumpling stew"><span>Beef dumpling stew</span></li>
+            <li><img src="images/fishpie.jpg" alt="Fish pie"><span>Fish pie</span></li>
+        </ul>
+    </div>
+    <div class="meals">
+        <span class="random">Random Recipe</span>
+        <div class="meal">
+            <div class="meal-header">
+                <img src="images/beefdumplingstew.jpg" alt="">
+            </div>
+            <div class="meal-body">
+                <h4>Beefy Beefy</h4>
+                <button><i class="far fa-heart"></i></button>
+            </div>
         </div>
-    </main>
+    </div>
+</div>
+
+
+
+
+
+
+
+    <script src="main.js"></script>
 </body>
 </html>
