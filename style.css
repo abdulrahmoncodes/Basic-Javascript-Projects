@@ -1,113 +1,84 @@
-*{
-    box-sizing: border-box;
-}
-
 body{
-    font-family: "Poppins", sans-serif;
-    margin: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-
-}
-
-.mobile-container{
-    background-color: rgb(233, 199, 255);
-    width: 400px;
-    box-shadow: 0 0 5px #3333331a;
-    overflow: hidden;
-    width: 400px;
-}
-
-img{
-    max-width: 100%;
-}
-
-header{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 1rem;
-}
-
-header input{
-    background-color: #eee;
-    border: none;
-    border-radius: 3px;
-    padding: 0.5rem 1rem;
-}
-
-header button{
-    background-color: transparent;
-    border: none;
-    color: #aaa;
-    font-size: 1.5rem;
-    margin-left: 10px;
-}
-
-.fav-container{
-    padding: 1rem;
     text-align: center;
+    
+}
+
+.notes{
+    margin: auto;
+    width: 50%;
+    border: 3px solid #73AD21;
+    padding: 10px;
+}
+
+.main{
+    display: inline-flex;
+    gap: 5px;
+}
+
+
+
+.modal{
+    color: white;
+    padding-top: 50px;
+    font-size: 20px;
+}
+
+.close{
+    display: block;
+    cursor: pointer;
+    float: right;
+    /* background-color: #576377; */
+    margin-top: -10px;
+}
+
+.close:hover
+.close:focus{
+    background-color: azure;
+    cursor: pointer;
+
 
 }
 
-.fav-meals{
+.modal-container{
+    position: fixed;
+    display: none;
+    z-index: 1;
+    background-color: #e75389;
+    padding-top: 1rem;
+    overflow: auto;
+    width: 40rem;
+    height: 10rem;
+
+}
+.todo-items{
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    list-style-type: none;
-    padding: 0;
+    align-content: space-between;
+    gap: 5px;
+    flex-direction: row;
+    padding: 5px;
+}
+
+.btn-submit{
+    cursor: pointer;
+}
+
+.btn-submit{
+    color: aquamarine;
+}
+
+.done{
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+.done:hover{
+    color: #73AD21;
+}
+
+.textarea{
+    width: 200px;
+    height: 30px;
 
 }
 
-.fav-meals li img {
-    border-radius: 50%;
-    object-fit: cover;
-    height: 100px;
-    width: 100px;
-}
-
-.fav-meals li span {
-    font-size: 0.8rem;
-}
-
-.meals{
-    border-radius: 3px;
-    box-shadow: 0 0 10px 2px #3333331a;
-    margin-left: 1.5rem;
-
-}
-
-.meal-header{
-    position: relative;
-
-}
-
-.meal-header .random{
-    position: absolute;
-    top: 10px;
-    background-color: #fff;
-    padding: .25rem 1rem;
-    border-top-right-radius: 3px;
-    border-bottom-right-radius: 3px;
-}
-.meal-header img{
-    object-fit: cover;
-    height: 250px;
-    width: 100%;
-
-}
-
-.meal-body {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1rem;
-
-
-}
-
-.meal-body h4{
-    margin: 0;
-}

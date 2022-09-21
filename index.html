@@ -1,47 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+ <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RECIPE APP</title>
+    <title>TODO LIST APP</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
-</head>
-<body>
+    <script src="script.js" defer></script>
+ </head>
+  <body>
 
-<div class="mobile-container">
-    <header>
-        <input type="text">
-        <button id="search"><i class="fas fa-search"></i></button>
-    </header>
-    <div class="fav-container">
-        <h3>Favorite Meals</h3>
-        <ul class="fav-meals">
-            <li><img src="images/bakewelltart.jpg" alt="Bakewell tart"><span>Bakewell tart</span></li>
-            <li><img src="images/beefdumplingstew.jpg" alt="Beef dumpling stew"><span>Beef dumpling stew</span></li>
-            <li><img src="images/fishpie.jpg" alt="Fish pie"><span>Fish pie</span></li>
-        </ul>
+    <div class="notes">
+      <h2>TODO LIST</h2>
+      <main>
+        <div class="main">
+          <input type="text" class="textarea" placeholder="Enter your task">
+          <button type="submit" class="btn-submit">Submit</button>
+         </div>
+      </main>
     </div>
-    <div class="meals">
-        <span class="random">Random Recipe</span>
-        <div class="meal">
-            <div class="meal-header">
-                <img src="images/beefdumplingstew.jpg" alt="">
-            </div>
-            <div class="meal-body">
-                <h4>Beefy Beefy</h4>
-                <button><i class="far fa-heart"></i></button>
-            </div>
-        </div>
+     <div class="save-list">
+      <ol class="show-list"></ol>
+     </div>
+    <div id="myModal" class="modal-container">
+      <div class="modal">
+        <p>Add a list</p>
+        <button type="close" class="close">X</button>
+      </div>
     </div>
-</div>
-
-
-
-
-
-
-
-    <script src="main.js"></script>
-</body>
+    
+  </body>
 </html>
