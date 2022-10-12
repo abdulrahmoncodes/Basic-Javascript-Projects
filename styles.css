@@ -1,0 +1,69 @@
+*{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: normal;
+    box-sizing: border-box;
+    
+
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(to right, #2089b6, #ee6988);
+    
+}
+
+.calculator-container{
+    width: max-content;
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center; */
+    top: 50%;
+    left: 50%;
+
+}
+
+.buttons{
+    max-width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+button{
+    flex: 1 25%;
+    padding: 15px;
+    font-size: 26px;
+    cursor: pointer;
+    outline: none;
+    border: 1px solid black;
+}
+
+button:hover{
+    background-color: rgba(0,0,0,.5);
+}
+
+.calculator-display{
+    grid-column: 1/-1;
+    width: 100%;
+    background-color: rgba(0,0,0,.75);
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    color: white;
+    word-wrap: break-word;
+    word-break: break-all;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.calculator-display .former-operand{
+    font-size: 1rem;
+}
+
+.calculator-display .latter-operand{
+    font-size: 1.5rem;
+}
